@@ -125,7 +125,7 @@ body.dark-mode input[type="text"]::placeholder {
   border-radius: 34px;
 }
 
-.slider:before {
+.slider::before {
   position: absolute;
   content: "";
   height: 23px;
@@ -179,4 +179,4 @@ input:checked + .slider::before {
   input:checked + .slider::before {
     transform: translateX(20px);
   }
-} 
+}
