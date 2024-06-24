@@ -2,7 +2,6 @@ body {
   background-color: rgb(241, 244, 246);
   color: black;
   transition: background-color 0.3s, color 0.3s;
-  max-width: auto;
 }
 
 * {
@@ -63,7 +62,7 @@ input[type="text"] {
   border-bottom: 2px solid black;
   border-color: #66f;
   border-width: 10%;
-  background: transparent;
+  background: black;
 }
 
 button {
