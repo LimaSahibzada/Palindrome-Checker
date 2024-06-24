@@ -61,8 +61,7 @@ input[type="text"] {
   border: none;
   border-bottom: 2px solid black;
   border-color: #66f;
-  border-width: 10%;
-  background: black;
+  background: rgb(241, 244, 246);
 }
 
 button {
