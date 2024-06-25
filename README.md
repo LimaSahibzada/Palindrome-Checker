@@ -15,9 +15,7 @@ I've decided to create a palindrome checker in HTML, CSS, and JavaScript because
 
 - Below you can have a view of my page:
 
-[Palindrome-Checker-light mode](https://github.com/LimaSahibzada/Palindrome-Checker/assets/167701815/96c5cfa9-d8fc-407a-a6ba-8d270af49a22)<br>
-[Palindrome-Checker-dark mode](https://github.com/LimaSahibzada/Palindrome-Checker/assets/167701815/5585110b-2737-48cf-be46-ccbb0f47c211)
-
+[Palindrome-Checker](https://limasahibzada.github.io/Palindrome-Checker/)
 
 
 
