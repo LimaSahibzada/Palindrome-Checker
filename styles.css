@@ -1,0 +1,180 @@
+body {
+  background-color: rgb(241, 244, 246);
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+* {
+  font-family: 'curasive', Times, serif;
+}
+
+#shadowBox {
+  margin-top: 0%;
+}
+
+.rainbow {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  animation: colorRotate 6s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #66f;
+  }
+
+  10% {
+    color: #09f;
+  }
+
+  50% {
+    color: #0f0;
+  }
+
+  75% {
+    color: #f39;
+  }
+
+  100% {
+    color: #66f;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.input-button-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid black;
+  border-color: #66f;
+  background: rgb(241, 244, 246);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  background: #66f;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+#par {
+  height: 10%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+body.dark-mode {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+body.dark-mode input[type="text"] {
+  background-color: transparent;
+  color: white;
+  border-color: #66f;
+}
+
+body.dark-mode input[type="text"]::placeholder {
+  color: #bbb;
+}
+
+.switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(89, 35, 215);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #ece5f1ac;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+@media only screen and (max-width: 600px) {
+  .rainbow {
+    font-size: 24px;
+  }
+
+  input[type="text"] {
+    width: 60%;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  #par {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .switch {
+    width: 50px;
+    height: 25px;
+  }
+
+  .slider::before {
+    height: 20px;
+    width: 20px;
+    bottom: 2.5px;
+  }
+
+  input:checked + .slider::before {
+    transform: translateX(20px);
+  }
+}
